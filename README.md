@@ -13,7 +13,7 @@
 
 一个社科小萌新编写的知乎话题爬虫，它能：
 
-1. 根据知乎话题 ID 爬取该话题标签下的**大部分**问题和专栏，支持多个话题爬取[<sub>为什么不是全部问题</sub>](https://github.com/tianranchunzhen/ZhihuTopicCrawler/edit/main/README.md#scraping1_questions_by_topicidpy)
+1. 根据知乎话题 ID 爬取该话题标签下的**大部分**问题和专栏，支持多个话题爬取[<sub>为什么不是全部问题</sub>](https://github.com/tianranchunzhen/ZhihuTopicCrawler#scraping1_questions_by_topicidpy)
 2. 根据问题列表爬取问题的元信息
 3. 根据问题 ID 爬取该问题下所有的答案及答案对应的作者信息
 4. 根据用户主页 URL 爬取用户元信息
