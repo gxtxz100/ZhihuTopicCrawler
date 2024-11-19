@@ -1,9 +1,7 @@
-# # Get Additional Author Information by Author ID
+# Get Additional Author Information by Author ID
 
-# ### About this script:
-
-# - **Input**: A list of author ID
-# - **Output**: A list of additional information by author ID: Total upvote received, total follower, total answer posted, total article posted, top-write and other forum achievements
+# Input: A list of author ID
+# Output: A list of additional information by author ID: Total upvote received, total follower, total answer posted, total article posted, top-write, and other meta-data
 # Last Run: 2024/11/16 15:05
 
 import os

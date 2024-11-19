@@ -1,9 +1,7 @@
-# # Get all questions and question meta-data for a given topic ID
+# Get all questions from topics
 
-# ### About this script:
-
-# - **Input**: Topic ID
-# - **Output**: A list of questions with other meta-data: Question ID, Question Text, Question Data, Question URL
+# Input: Topic ID
+# Output: A list of questions with other meta-data: Question ID, Question Text, Question Data, Question URL
 # Last Run: 2024/11/16 12:32
 
 
@@ -169,10 +167,10 @@ def crawl_3(topicID):
     print("crawl_等待回答: 完成")
 
 if __name__ == "__main__":
-    # 杨笠: 21340547
-    # 京东: 19554417
+    # 漩涡鸣人: 20204759
+    # 春野樱: 20135411
     #TODO 指定要爬取的话题ID
-    topicID_list = ["21340547", "19554417"]
+    topicID_list = ["20204759", "20135411"]
     q_list = []
 
     for topicID in topicID_list:

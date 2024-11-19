@@ -1,9 +1,7 @@
-# # Get question meta-data for a given question ID
+# Get question meta-data for a given question ID
 
-# ### About this script:
-
-# - **Input**: A list of question ID
-# - **Output**: A list of question meta-data by question ID: Question Text, Answer Count, Follower Count, View Count, Tags
+# Input: A list of question ID
+# Output: A list of question meta-data by question ID: Question Text, Answer Count, Follower Count, View Count, Tags
 # Last Run: 2024/11/16 12:51
 
 
@@ -12,7 +10,6 @@ import time
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 from get_url_text import get_url_text
-
 
 def get_question_list(filename):
     df = pd.read_csv(filename)
@@ -71,7 +68,6 @@ def save_data(q_info_list, filename):
         df = df.sort_values(by=["created_date"])
         
     df.to_csv(filename, index=False, header=True, encoding="utf-8")
-
 
 # 代码一次只能跑250条，之后会变乱码，需要手动去浏览器更新cookie
 # 2024/11/16更新：似乎不会再变乱码了，建议保持关注
