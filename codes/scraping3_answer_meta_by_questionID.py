@@ -103,6 +103,8 @@ def save_data(answer_info, q_id):
 if __name__ == "__main__":
     # TODO: 指定问题列表
     q_list = get_q_list("data/question_meta_info.csv")
+    # 也可手动输入问题 ID 以获取回答数据
+    # q_list = ["291278869", "291278870"]
 
     # 爬一段时间会触发知乎的验证码机制导致HTTPError报错，需要手动重新设置开始位置
     begin_index = 0  # 将发生报错的问题序号更新到这里即可
