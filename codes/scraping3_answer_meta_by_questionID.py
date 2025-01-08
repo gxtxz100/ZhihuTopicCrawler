@@ -3,7 +3,7 @@
 # About this script:
 # **Input**: A list of question ID
 # **Output**: A list of answer posts and answer post meta-data by question ID: Answer post text, answer date, upvote count, comment count, answer ID, author name, author gender, author follower count, author bio, author username
-# Last Run: 2025/1/9 1:38
+# Last Run: 2025/1/9 1:39
 
 import re
 import os
