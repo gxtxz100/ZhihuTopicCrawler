@@ -111,7 +111,7 @@ if __name__ == "__main__":
     # 也可手动输入问题 ID 以获取回答数据
     # q_list = ["24324127", "24399025"]
 
-    # 爬一段时间会触发京东的验证码机制导致HTTPError报错，需要手动重新设置开始位置
+    # 爬一段时间会触发知乎的验证码机制导致HTTPError报错，需要手动重新设置开始位置
     begin_index = 0  # 将发生报错的问题序号更新到这里即可
     for i, q_id in enumerate(q_id_list[begin_index:]):
         q_content = questions_dict.get(q_id, "None")
