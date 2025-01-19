@@ -18,7 +18,7 @@ def get_q_list(filename):
     df = df[df["answerCount"] > 5]  # 默认爬取回答数大于5的问题
     df = df[df["created_date"] >= "2024-10-15"]  # 可选要更新的问题的时间范围
     
-    questions_dict = dict(zip(df["q_id"].tolist(), df["q_content"].tolist()))
+    questions_dict = dict(zip(df["q_id"].astype(int).tolist(), df["q_content"].tolist()))
     
     print(f"共有 {len(questions_dict)} 个回答数大于5且不重复的问题")
 
@@ -108,8 +108,9 @@ if __name__ == "__main__":
     # TODO: 指定问题列表
     questions_dict = get_q_list("data/question_meta_info.csv")
     q_id_list = list(questions_dict.keys())
-    # 也可手动输入问题 ID 以获取回答数据
-    # q_list = ["24324127", "24399025"]
+    
+    # 也可手动输入问题 ID 以获取回答数据，整数类型
+    # q_list = [24324127, 24399025]
 
     # 爬一段时间会触发知乎的验证码机制导致HTTPError报错，需要手动重新设置开始位置
     begin_index = 0  # 将发生报错的问题序号更新到这里即可
