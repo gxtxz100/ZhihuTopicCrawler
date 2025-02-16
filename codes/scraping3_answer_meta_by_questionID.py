@@ -16,9 +16,9 @@ from get_url_text import get_url_text
 def get_q_list(filename):
     df = pd.read_csv(filename, encoding="utf-8")
     df = df[df["answerCount"] > 5]  # 默认爬取回答数大于5的问题
-    df = df[df["created_date"] >= "2024-10-15"]  # 可选要更新的问题的时间范围
+    # df = df[df["created_date"] >= "2024-10-15"]  # 可选要更新的问题的时间范围
     
-    questions_dict = dict(zip(df["q_id"].astype(int).tolist(), df["q_content"].tolist()))
+    questions_dict = dict(zip(df["q_id"].astype("int64").tolist(), df["q_content"].tolist()))
     
     print(f"共有 {len(questions_dict)} 个回答数大于5且不重复的问题")
 
