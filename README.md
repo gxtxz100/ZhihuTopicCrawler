@@ -30,7 +30,7 @@
 > [!IMPORTANT]
 > 使用前必须更新此文件中的`user-agent`和`cookie`
 > 
-> **建议注册一个小号，使用登录小号的cookie，防止主号被封或出现全乱码(￣▽￣)**
+> **强烈建议注册一个小号并使用登录小号的cookie，防止主号被封或出现全乱码(￣▽￣)**
 
 ### **scraping1_questions_by_topicID.py**
 
