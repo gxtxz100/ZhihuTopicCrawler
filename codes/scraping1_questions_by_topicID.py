@@ -95,7 +95,7 @@ def crawl_1(topicID):
     url = (
         "https://www.zhihu.com/api/v5.1/topics/"
         + topicID
-        + "/feeds/essence?offset=0&limit=50"
+        + "/feeds/essence/v2?offset=0&limit=50"
     )
     while url:
         try:
@@ -108,7 +108,7 @@ def crawl_1(topicID):
     url = (
         "https://www.zhihu.com/api/v5.1/topics/"
         + topicID
-        + "/feeds/timeline_activity?offset=0&limit=50"
+        + "/feeds/timeline_activity/v2?offset=0&limit=50"
     )
     while url:
         try:
@@ -125,7 +125,7 @@ def crawl_2(topicID):
     url = (
         "https://www.zhihu.com/api/v5.1/topics/"
         + topicID
-        + "/feeds/top_activity?offset=0&limit=50"
+        + "/feeds/top_activity/v2?offset=0&limit=50"
     )
     while url:
         try:
@@ -141,7 +141,7 @@ def crawl_3(topicID):
     url = (
         "https://www.zhihu.com/api/v5.1/topics/"
         + topicID
-        + "/feeds/top_question?offset=0&limit=50"
+        + "/feeds/top_question/v2?offset=0&limit=50"
     )
     while url:
         try:
@@ -154,7 +154,7 @@ def crawl_3(topicID):
     url = (
         "https://www.zhihu.com/api/v5.1/topics/"
         + topicID
-        + "/feeds/new_question?offset=0&limit=50"
+        + "/feeds/new_question/v2?offset=0&limit=50"
     )
     while url:
         try:
