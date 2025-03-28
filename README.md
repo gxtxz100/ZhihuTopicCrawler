@@ -29,7 +29,10 @@
 包含访问网页并返回网页文本的函数，用于在其他部分中调用。使用前需登录自己的知乎账号更新其中的 `headers`部分，网页出现乱码时也需在此处更新 Cookie。
 
 > [!IMPORTANT]
+>
 > 使用前必须更新此文件中的 `user-agent`和 `cookie`
+>
+> **强烈建议注册一个小号并使用登录小号的cookie，防止主号被封或出现全乱码(￣▽￣)**
 
 ### **scraping1_questions_by_topicID.py**
 
@@ -63,7 +66,7 @@
 
 ### **scraping3_answer_meta_by_questionID.py**
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >
 > **2025/3/28：知乎更新了加密，该爬虫文件已不可用，请等待更新。。。**
 
